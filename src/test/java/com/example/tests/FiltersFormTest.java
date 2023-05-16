@@ -58,9 +58,9 @@ public class FiltersFormTest extends BaseTest {
   public void testPriceEnabledWhenDatesAreProvided() {
     filterModalComponent = searchResultPage.navigateToSearchPage("start=" + formattedToday, "end=" + formattedTomorrow)
         .clickFilter();
-    Allure.step("Assert that from price is enabled");
+    Allure.step("Assert that from price field is enabled");
     Assert.assertTrue(filterModalComponent.priceFromInput.isEnabled());
-    Allure.step("Assert that to price is enabled");
+    Allure.step("Assert that to price field is enabled");
     Assert.assertTrue(filterModalComponent.priceToInput.isEnabled());
     filterModalComponent.fillFromPrice("1").fillToPrice("200");
     Allure.step("Assert that from price value is correct");
