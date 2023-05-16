@@ -15,9 +15,13 @@ brew install allure
 ```bash
 mvn clean test
 ```
-4. Generate the Allure report:
+3. Generate the Allure report:
 ```bash
 allure serve
 ```
 
 #You can find the allure results [here](https://alyaothman14.github.io/selenium-java/selenium/)
+
+##Future Improvement
+1. Run across multiple browsers
+2. Add parallalelization
