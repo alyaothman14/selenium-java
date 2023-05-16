@@ -15,6 +15,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
+      - run: ls    
       - name: Run Selenium tests
         run: mvn clean test
       - name: Get Allure history
