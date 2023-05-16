@@ -1,5 +1,6 @@
 allure-report
 allure-results
+.DS_Store
 # Compiled class file
 *.class
 
