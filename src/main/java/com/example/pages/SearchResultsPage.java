@@ -21,8 +21,6 @@ public class SearchResultsPage extends BasePage {
 
     // Navigate to search page with default queries if no queries are passed
     public SearchResultsPage navigateToSearchPage(String... queries) {
-        Allure.step("Navigate to Search page with queries: " + queries);
-
         if (queries == null) {
             this.driver.get(this.baseUrl + "search?numberOfGuests=1");
         } else {
